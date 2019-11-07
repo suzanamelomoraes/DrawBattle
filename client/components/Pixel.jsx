@@ -10,7 +10,7 @@ class Pixel extends React.Component {
     return (
     // <>
 
-      <div style={stylie}></div>
+      <div className='pixel' style={stylie}></div>
     // </>
     )
   }

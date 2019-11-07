@@ -13,3 +13,9 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
+
+.pixel {
+  border: 1px;
+  border-style: dotted;
+  border-color: black;
+}
