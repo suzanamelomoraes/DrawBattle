@@ -1,20 +1,32 @@
 import React from 'react'
 
-// const HexColor = () =>
-//   `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
+const randomHexColor = () =>
+  `#${Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, 0)}`
 
 // on-click until user finds color
 // once color is found, user can drag cursor?
+
+let currentColor = randomHexColor()
 
 class Pixel extends React.Component {
   state = {
     backgroundColor: 'blanchedalmond'
   }
+
   draw = () => {
     this.setState(
-      { backgroundColor: 'lime' }
+      { backgroundColor: currentColor }
     )
   }
+
+  changeColor = () => {
+    currentColor = randomHexColor()
+
+    // this.setState(
+    //   { backgroundColor: randomHexColor() }
+    // )
+  }
+
   erasePixel = (event) => {
     event.preventDefault()
     this.setState(
@@ -29,7 +41,7 @@ class Pixel extends React.Component {
     const stylie = { height: '30px', width: '30px', backgroundColor: this.state.backgroundColor }
     return (
     // <>
-      <div className='pixel' style={stylie} onClick={this.draw} onContextMenu={this.erasePixel}></div>
+      <div className='pixel' style={stylie} onClick={this.draw} onContextMenu={this.erasePixel} onDoubleClick={this.changeColor}></div>
 
     // </>
     )
