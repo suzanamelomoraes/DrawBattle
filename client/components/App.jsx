@@ -5,7 +5,7 @@ const App = () => {
   // const board = Array.from({ length: 50 }, () => (<Pixel />))
   return (
     <div>
-      {Array.from({ length: 64 }, () => (<Pixel />))}
+      {Array.from({ length: 551 }, () => (<Pixel />))}
     </div>
 
   )
