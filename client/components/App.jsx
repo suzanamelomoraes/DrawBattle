@@ -2,10 +2,11 @@ import React from 'react'
 import Pixel from './Pixel'
 
 const App = () => {
+  // const board = Array.from({ length: 50 }, () => (<Pixel />))
   return (
-    <React.Fragment>
-      <Pixel />
-    </React.Fragment>
+    <div>
+     {Array.from({ length: 50 }, () => (<Pixel />))}
+    </div>
 
   )
 }
