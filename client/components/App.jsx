@@ -1,5 +1,6 @@
 import React from 'react'
 import Pixel from './Pixel'
+import Prompt from './Prompt'
 
 const gameTime = 30000
 
@@ -52,6 +53,11 @@ class App extends React.Component {
           <div>
             {Array.from({ length: 551 }, (curVal, idx) => (<Pixel key={idx} gameState={this.state.gameState}/>))}
           </div>
+
+          <div className="prompt">
+            <Prompt/>
+          </div>
+
         </div>
       </React.Fragment>
     )
