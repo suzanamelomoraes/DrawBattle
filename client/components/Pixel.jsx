@@ -37,9 +37,7 @@ class Pixel extends React.Component {
 
     return (
     // <>
-    
-      <div className='pixel' style={stylie} onClick={this.draw} onContextMenu={this.erasePixel} onDoubleClick={this.changeColor}>
-      </div>
+      this.props.gameState === 'playing' ? (<div className='pixel' style={stylie} onClick={this.draw} onContextMenu={this.erasePixel} onDoubleClick={this.changeColor}></div>) : (<div className='pixel' style={stylie} ></div>)
 
     // </>
     )

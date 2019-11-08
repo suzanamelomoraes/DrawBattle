@@ -45,7 +45,7 @@ class App extends React.Component {
           </div>
 
           <div>
-            {Array.from({ length: 551 }, (curVal, idx) => (<Pixel key={idx}/>))}
+            {Array.from({ length: 551 }, (curVal, idx) => (<Pixel key={idx} gameState={this.state.gameState}/>))}
           </div>
         </div>
 
