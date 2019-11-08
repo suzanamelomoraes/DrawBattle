@@ -5,6 +5,11 @@ html, body, .viewport {
   /* background-color: black; */
 }
 
+li {
+  font-family: 'Bangers', cursive;
+  
+}
+
 #app {
   width: 50%;
   padding: 25vw;
@@ -14,6 +19,7 @@ html, body, .viewport {
 }
 
 h1{
+  margin: 10vh;
   font-family: 'Bangers', cursive;
   font-size: 80px;
 
