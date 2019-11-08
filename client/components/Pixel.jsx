@@ -21,10 +21,6 @@ class Pixel extends React.Component {
 
   changeColor = () => {
     currentColor = randomHexColor()
-
-    // this.setState(
-    //   { backgroundColor: randomHexColor() }
-    // )
   }
 
   erasePixel = (event) => {
@@ -32,16 +28,18 @@ class Pixel extends React.Component {
     this.setState(
       // on right-click, erase colored pixel
       // prevent default setting
-
       { backgroundColor: 'blanchedalmond' }
     )
   }
 
   render () {
     const stylie = { height: '30px', width: '30px', backgroundColor: this.state.backgroundColor }
+
     return (
     // <>
-      <div className='pixel' style={stylie} onClick={this.draw} onContextMenu={this.erasePixel} onDoubleClick={this.changeColor}></div>
+    
+      <div className='pixel' style={stylie} onClick={this.draw} onContextMenu={this.erasePixel} onDoubleClick={this.changeColor}>
+      </div>
 
     // </>
     )
