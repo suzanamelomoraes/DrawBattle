@@ -31,6 +31,9 @@ class App extends React.Component {
       }
     )
   }
+  clearBoard = () => {
+    document.location.reload()
+  }
 
   render () {
     return (
@@ -43,13 +46,13 @@ class App extends React.Component {
         <div>
           <div>
             <button onClick={this.startGame}>START</button>
+            <button onClick={this.clearBoard}>CLEAR</button>
           </div>
 
           <div>
             {Array.from({ length: 551 }, (curVal, idx) => (<Pixel key={idx} gameState={this.state.gameState}/>))}
           </div>
         </div>
-
       </React.Fragment>
     )
   }
