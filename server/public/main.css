@@ -8,10 +8,16 @@ html, body, .viewport {
 #app {
   width: 50%;
   padding: 25vw;
+  padding-top: 5vh;
   justify-content: center;
   
 }
 
+h1{
+  font-family: 'Bangers', cursive;
+  font-size: 80px;
+
+}
 div {
   display: flex;
   flex-wrap: wrap;
