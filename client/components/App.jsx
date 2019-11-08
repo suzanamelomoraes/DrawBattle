@@ -13,7 +13,6 @@ class App extends React.Component {
   }
 
   stopGame = () => {
-    console.log(this.state.gameState)
     this.setState({ gameState: 'finished' })
   }
 
@@ -26,7 +25,6 @@ class App extends React.Component {
       () => {
         setTimeout(() => {
           this.stopGame()
-          console.log(intervalId)
           clearInterval(this.state.intervalId)
         }, gameTime)
       }
