@@ -35,6 +35,7 @@ class App extends React.Component {
   render () {
     return (
       <React.Fragment>
+        <h1>Draw Battle!</h1>
         <div className='timer'>
           <span>{this.state.timeRem}</span>
         </div>
@@ -48,7 +49,6 @@ class App extends React.Component {
             {Array.from({ length: 551 }, (curVal, idx) => (<Pixel key={idx} gameState={this.state.gameState}/>))}
           </div>
         </div>
-
 
       </React.Fragment>
     )
