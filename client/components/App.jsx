@@ -38,7 +38,14 @@ class App extends React.Component {
   render () {
     return (
       <React.Fragment>
+        <ul>
+          <li>Push the start button to start the timer. You have 30 seconds to art it up!</li>
+          <li>One click is to just input a color</li>
+          <li>And double-click is to change color</li>
+          <li>Right click to delete</li>
+        </ul>
         <h1>Draw Battle!</h1>
+        
         <div className='timer'>
           <span>{this.state.timeRem}</span>
         </div>
