@@ -29,25 +29,25 @@
     ]
   },
   "dependencies": {
-    "express": "^4.16.4",
-    "superagent": "^5.0.2"
+    "express": "^4.17.1",
+    "superagent": "^5.3.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
-    "@babel/plugin-proposal-object-rest-spread": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^24.7.1",
-    "babel-loader": "^8.0.5",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1",
-    "jest": "^24.7.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "webpack": "^4.29.6",
-    "webpack-cli": "^3.3.11",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
+    "jest": "^24.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
   }
 }
